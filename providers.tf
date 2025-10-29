@@ -5,4 +5,8 @@ terraform {
       version = "~> 6.0"
     }
   }
-}               
+}
+
+provider "aws" {
+  region = var.test_server_availability_zone
+}
