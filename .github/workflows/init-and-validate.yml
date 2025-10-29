@@ -18,3 +18,9 @@ jobs:
         run: tofu init
       - name: Validate
         run: tofu validate
+      - name: Plan
+        env:
+          TF_VAR_test_server_ami: ${{ secrets.TF_VAR_test_server_ami }}
+          TF_VAR_test_server_availability_zone: ${{ secrets.TF_VAR_test_server_availability_zone }}
+          TF_VAR_test_server_instance_type: ${{ secrets.TF_VAR_test_server_instance_type }}
+        run: tofu plan -out plan.out 
