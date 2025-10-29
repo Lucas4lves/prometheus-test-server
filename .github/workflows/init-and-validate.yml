@@ -16,3 +16,5 @@ jobs:
         uses: opentofu/setup-opentofu@v1
       - name: Initialize OpenTofu
         run: tofu init
+      - name: Validate
+        run: tofu validate
