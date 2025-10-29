@@ -1,0 +1,16 @@
+name: tf-init-and-validate
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+  
+jobs:
+  init-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
+      - name: Initialize OpenTofu
+        run: tofu init
