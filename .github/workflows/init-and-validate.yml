@@ -23,6 +23,10 @@ jobs:
           aws-region: us-east-1
       - name: Setup OpenTofu
         uses: opentofu/setup-opentofu@v1
+      - name: Grant permission to run gen-backend.sh
+        run: chmod +x ./gen-backend.sh
+      - name: Write backend definition
+        run: ./gen-backend.sh ${{ secrets.TF_VAR_REMOTE_STATE_BUCKET_NAME }} ${{ secrets.TF_VAR_REMOTE_STATE_FILEPATH }} "us-east-1"
       - name: Initialize OpenTofu
         run: tofu init
       - name: Validate
