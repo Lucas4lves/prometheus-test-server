@@ -1,3 +1,4 @@
 **/.terraform/
 environments/
+*.tfstate.*
 **/*.out
