@@ -9,3 +9,5 @@ terraform {
     }
 }
 EOF
+
+cat ./backend.tf
