@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "aws" {
-  region = var.test_server_availability_zone
+  region = var.region
 }
