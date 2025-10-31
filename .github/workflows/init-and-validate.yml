@@ -38,3 +38,5 @@ jobs:
           TF_LOG: DEBUG
           TF_LOG_PATH: tofu.log
         run: tofu plan -out plan.out 
+      - name: Open log
+        run: cat ./tofu.log

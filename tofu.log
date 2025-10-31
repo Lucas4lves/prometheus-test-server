@@ -1,0 +1,392 @@
+2025-10-30T22:23:29.706-0300 [INFO]  OpenTofu version: 1.10.6
+2025-10-30T22:23:29.706-0300 [DEBUG] using github.com/hashicorp/go-tfe v1.53.0
+2025-10-30T22:23:29.706-0300 [DEBUG] using github.com/opentofu/hcl/v2 v2.20.2-0.20250121132637-504036cd70e7
+2025-10-30T22:23:29.706-0300 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-30T22:23:29.706-0300 [DEBUG] using github.com/zclconf/go-cty v1.16.3
+2025-10-30T22:23:29.706-0300 [INFO]  Go runtime version: go1.25.0
+2025-10-30T22:23:29.706-0300 [INFO]  CLI args: []string{"tofu", "init", "-reconfigure"}
+2025-10-30T22:23:29.706-0300 [DEBUG] Attempting to open CLI config file: /Users/razgriz1/.tofurc
+2025-10-30T22:23:29.706-0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-30T22:23:29.706-0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-30T22:23:29.706-0300 [DEBUG] ignoring non-existing provider search directory /Users/razgriz1/.terraform.d/plugins
+2025-10-30T22:23:29.706-0300 [DEBUG] ignoring non-existing provider search directory /Users/razgriz1/Library/Application Support/io.terraform/plugins
+2025-10-30T22:23:29.706-0300 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2025-10-30T22:23:29.707-0300 [DEBUG] Found the config directory: /Users/razgriz1/.terraform.d
+2025-10-30T22:23:29.707-0300 [INFO]  CLI command args: []string{"init", "-reconfigure"}
+2025-10-30T22:23:29.708-0300 [DEBUG] command: asking for input: "var.remote_state_bucket_name"
+2025-10-30T22:23:31.276-0300 [DEBUG] command: asking for input: "var.remote_state_filepath"
+2025-10-30T22:23:31.428-0300 [DEBUG] command: asking for input: "var.remote_state_filepath"
+2025-10-30T22:23:31.566-0300 [DEBUG] command: asking for input: "var.remote_state_bucket_name"
+2025-10-30T22:23:32.470-0300 [ERROR] UIInput scan err: EOF
+2025-10-30T22:23:33.927-0300 [DEBUG] Module installer: begin prometheus-test-server
+2025-10-30T22:23:42.949-0300 [INFO]  OpenTofu version: 1.10.6
+2025-10-30T22:23:42.949-0300 [DEBUG] using github.com/hashicorp/go-tfe v1.53.0
+2025-10-30T22:23:42.949-0300 [DEBUG] using github.com/opentofu/hcl/v2 v2.20.2-0.20250121132637-504036cd70e7
+2025-10-30T22:23:42.949-0300 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-30T22:23:42.949-0300 [DEBUG] using github.com/zclconf/go-cty v1.16.3
+2025-10-30T22:23:42.949-0300 [INFO]  Go runtime version: go1.25.0
+2025-10-30T22:23:42.949-0300 [INFO]  CLI args: []string{"tofu", "init", "-reconfigure", "-var-file", "environments/development/env.tfvars"}
+2025-10-30T22:23:42.950-0300 [DEBUG] Attempting to open CLI config file: /Users/razgriz1/.tofurc
+2025-10-30T22:23:42.950-0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-30T22:23:42.950-0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-30T22:23:42.950-0300 [DEBUG] ignoring non-existing provider search directory /Users/razgriz1/.terraform.d/plugins
+2025-10-30T22:23:42.950-0300 [DEBUG] ignoring non-existing provider search directory /Users/razgriz1/Library/Application Support/io.terraform/plugins
+2025-10-30T22:23:42.950-0300 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2025-10-30T22:23:42.950-0300 [DEBUG] Found the config directory: /Users/razgriz1/.terraform.d
+2025-10-30T22:23:42.950-0300 [INFO]  CLI command args: []string{"init", "-reconfigure", "-var-file", "environments/development/env.tfvars"}
+2025-10-30T22:23:43.246-0300 [DEBUG] checking for provisioner in "."
+2025-10-30T22:23:43.246-0300 [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2025-10-30T22:23:43.246-0300 [DEBUG] backend-s3.aws-base: Resolving credentials provider
+2025-10-30T22:23:43.247-0300 [DEBUG] backend-s3.aws-base: Using profile: tf_aws.profile=gh-actions-user tf_aws.profile.source=envvar
+2025-10-30T22:23:43.247-0300 [DEBUG] backend-s3.aws-base: Loading configuration
+2025-10-30T22:23:43.247-0300 [DEBUG] backend-s3.aws-base: Retrieving credentials
+2025-10-30T22:23:43.247-0300 [DEBUG] backend-s3.aws-base: HTTP Request Sent: aws.region=us-east-1 rpc.method=AssumeRole rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.content_type=application/x-www-form-urlencoded http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.33.12 m/E" http.request.header.amz_sdk_invocation_id=bff6de08-9a2e-4c98-94c9-584339c52eba
+  http.request.body=
+  | Action=AssumeRole&DurationSeconds=900&RoleArn=arn%3Aaws%3Aiam%3A%3A532907084571%3Arole%2Fgh-actions-user-role&RoleSessionName=aws-go-sdk-1761873823247129000&Version=2011-06-15
+   http.method=POST http.url=https://sts.us-east-1.amazonaws.com/ net.peer.name=sts.us-east-1.amazonaws.com http.request_content_length=175 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************XCPQ/20251031/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.amz_sdk_request="attempt=1; max=3" http.request.header.x_amz_date=20251031T012343Z
+2025-10-30T22:23:43.849-0300 [DEBUG] backend-s3.aws-base: HTTP Response Received: aws.region=us-east-1 rpc.method=AssumeRole rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region=""
+  http.response.body=
+  | <AssumeRoleResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <AssumeRoleResult>
+  |     <AssumedRoleUser>
+  |       <AssumedRoleId>AROA*************CPBM:aws-go-sdk-1761873823247129000</AssumedRoleId>
+  |       <Arn>arn:aws:sts::532907084571:assumed-role/gh-actions-user-role/aws-go-sdk-1761873823247129000</Arn>
+  |     </AssumedRoleUser>
+  |     <Credentials>
+  |       <AccessKeyId>ASIA************MMKR</AccessKeyId>
+  |       <SecretAccessKey>/Yx6********************************58oa</SecretAccessKey>
+  |       <SessionToken>IQoJb3JpZ2luX2VjEEIaCXVzLWVhc3QtMSJHMEUCIEiderhKQT9CymcZHDkIBWK09JH/jn4VbUvS7v3UFuNlAiEAtbqaUNER9nQIXlklr64zSZ1iD6x4lIk2o1U7aX93wvEqtAII+///////////ARABGgw1MzI5MDcwODQ1NzEiDIV0A/lqa3uuL0+5YCqIAhI5V4VEFXJl6c2dHNjpavOAV18NAi6GWGTfKp1Q4182eEYp0O/tQfLIV8/G56ztGXX/Pr7K2R9n7xPidyQ6vtCOyvIEwJSc5Tarlgr9oUtU5aFj/8ubPqH1J46tQIXLl3gtEKFy8bzeUonLb4nujS43R1X0EtQIj7BHOnSOGOyVDJdWNGkEyZZFVrLmSLDOef3GzDLgVzImsPjuH5q7EwZXbeSZwPSqDVrFAKl+uA1BgQBN2cmBBHbEEjhb5Rj9ywHHoylScgAD6rLjtikG23cRXRu4lG8dreVWKI2zLAKZVBbTdy8yMmhp0j0eNZR24qYTE4ujsq1azAf/y5NBImaHP9FJdkGEfjCfn5DIBjqdAc87lh8ktSOL8V0mKHge7rwW2snX/UqQRUDhKW235E+ujHf7GyRpNEjANfufLOQ2/r6fo4iU7rRJYKt0c2UcH12O6qwPIKSkUzCXmvphXAVTPYYtjpk6GYpj3E0YwJJ2I6rUhaQp77DfZFdS/SjvALTshCp+Yz6W3kLeVqlFwvOsfjJnEIYY5A2erEkkxVIq6V+X/NB82HA8ciMHtX4=</SessionToken>
+  |       <Expiration>2025-10-31T01:38:43Z</Expiration>
+  |     </Credentials>
+  |   </AssumeRoleResult>
+  |   <ResponseMetadata>
+  |     <RequestId>b68d67ff-239d-4cb8-8397-6198af41e900</RequestId>
+  |   </ResponseMetadata>
+  | </AssumeRoleResponse>
+   http.duration=601 http.status_code=200 http.response_content_length=1515 http.response.header.content_type=text/xml http.response.header.date="Fri, 31 Oct 2025 01:23:43 GMT" http.response.header.x_amzn_requestid=b68d67ff-239d-4cb8-8397-6198af41e900 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzYxODczODIzOTA1OlI6TlpNZ1BSTE8=
+2025-10-30T22:23:43.849-0300 [INFO]  backend-s3.aws-base: Retrieved credentials: tf_aws.credentials_source=AssumeRoleProvider
+2025-10-30T22:23:43.849-0300 [DEBUG] backend-s3.aws-base: Loading configuration
+2025-10-30T22:23:43.850-0300 [DEBUG] backend-s3.aws-base: Retrieving caller identity from STS
+2025-10-30T22:23:43.850-0300 [DEBUG] backend-s3.aws-base: HTTP Request Sent: aws.region=us-east-1 rpc.method=GetCallerIdentity rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.x_amz_security_token="*****" http.request.header.amz_sdk_request="attempt=1; max=5" http.request.header.x_amz_date=20251031T012343Z http.request_content_length=43 http.request.header.content_type=application/x-www-form-urlencoded http.request.header.amz_sdk_invocation_id=6ab374eb-f816-4980-b2f1-ca28cf6c8339
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.method=POST http.url=https://sts.us-east-1.amazonaws.com/ net.peer.name=sts.us-east-1.amazonaws.com http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.33.12" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************MMKR/20251031/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=*****"
+2025-10-30T22:23:44.321-0300 [DEBUG] backend-s3.aws-base: HTTP Response Received: aws.region=us-east-1 rpc.method=GetCallerIdentity rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.status_code=200 http.response_content_length=487 http.response.header.date="Fri, 31 Oct 2025 01:23:44 GMT" http.response.header.x_amzn_requestid=cae0aa89-54db-40cf-a897-a7e1b1ab2661 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzYxODczODI0MzkzOlI6N3c4WlhaVWg= http.response.header.content_type=text/xml
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:sts::532907084571:assumed-role/gh-actions-user-role/aws-go-sdk-1761873823247129000</Arn>
+  |     <UserId>AROA*************CPBM:aws-go-sdk-1761873823247129000</UserId>
+  |     <Account>532907084571</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>cae0aa89-54db-40cf-a897-a7e1b1ab2661</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.duration=470
+2025-10-30T22:23:44.321-0300 [INFO]  backend-s3.aws-base: Retrieved caller identity from STS
+2025-10-30T22:23:44.324-0300 [DEBUG] backend-s3: HTTP Request Sent: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket rpc.method=ListObjectsV2 rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.x_amz_date=20251031T012344Z http.request.body="" http.method=GET net.peer.name=devops-tf-states-bucket.s3.us-east-1.amazonaws.com http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************MMKR/20251031/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date;x-amz-security-token, Signature=*****" http.request.header.accept_encoding=identity http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.url="https://devops-tf-states-bucket.s3.us-east-1.amazonaws.com/?list-type=2&max-keys=1000&prefix=env%3A%2F" http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.75.2 m/C" http.request.header.x_amz_security_token="*****" http.request.header.amz_sdk_invocation_id=4d8c843d-179f-46ce-b2e2-476dbd6b93e5 http.request.header.amz_sdk_request="attempt=1; max=5"
+2025-10-30T22:23:44.877-0300 [DEBUG] backend-s3: HTTP Response Received: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket rpc.method=ListObjectsV2 rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.x_amz_request_id=SE5G9AWMTJVHFA6E http.response.header.x_amz_bucket_region=us-east-1 http.response.header.content_type=application/xml http.duration=552 http.status_code=200 http.response.header.x_amz_id_2="W4eTN1EB5hHp/bfTlUAzK5vAam+QpNHHLXpG7wzXSDHVf+KSwt/HJrLrzP+Dwj/MOClbRA1dk5s=" http.response.header.date="Fri, 31 Oct 2025 01:23:45 GMT" http.response.header.server=AmazonS3
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>devops-tf-states-bucket</Name><Prefix>env:/</Prefix><KeyCount>0</KeyCount><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+  
+2025-10-30T22:23:45.197-0300 [DEBUG] checking for provisioner in "."
+2025-10-30T22:23:45.197-0300 [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2025-10-30T22:23:45.197-0300 [DEBUG] backend-s3: HTTP Request Sent: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket rpc.method=ListObjectsV2 rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.body="" http.url="https://devops-tf-states-bucket.s3.us-east-1.amazonaws.com/?list-type=2&max-keys=1000&prefix=env%3A%2F" http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.75.2 m/C" http.request.header.x_amz_security_token="*****" http.request.header.amz_sdk_invocation_id=00f2f437-7566-4839-9acb-d850b9810675 http.request.header.amz_sdk_request="attempt=1; max=5" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20251031T012345Z http.method=GET net.peer.name=devops-tf-states-bucket.s3.us-east-1.amazonaws.com http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************MMKR/20251031/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date;x-amz-security-token, Signature=*****" http.request.header.accept_encoding=identity
+2025-10-30T22:23:45.338-0300 [DEBUG] backend-s3: HTTP Response Received: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket rpc.method=ListObjectsV2 rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.x_amz_bucket_region=us-east-1 http.response.header.content_type=application/xml http.response.header.x_amz_id_2="lkDcg94xD8qUZJDRvkf3AbxpDf8PWD0uM8IUCVCldtO8z0fDqdgiK5Lx1XaZC6WjZzt+tbxLPtM=" http.response.header.x_amz_request_id=SKKVX77BMWKMKJY0
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>devops-tf-states-bucket</Name><Prefix>env:/</Prefix><KeyCount>0</KeyCount><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+   http.duration=140 http.status_code=200 http.response.header.server=AmazonS3 http.response.header.date="Fri, 31 Oct 2025 01:23:46 GMT"
+2025-10-30T22:23:45.339-0300 [DEBUG] backend-s3: HTTP Request Sent: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket aws.s3.key=prometheus/prom.tfstate rpc.method=HeadObject rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.accept_encoding=identity http.request.header.amz_sdk_request="attempt=1; max=5" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.body="" http.method=HEAD net.peer.name=devops-tf-states-bucket.s3.us-east-1.amazonaws.com http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************MMKR/20251031/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date;x-amz-security-token, Signature=*****" http.request.header.x_amz_security_token="*****" http.request.header.x_amz_date=20251031T012345Z http.request.header.amz_sdk_invocation_id=60ec1ce9-d5cf-44f4-bc9f-ec9e57de4048 http.url=https://devops-tf-states-bucket.s3.us-east-1.amazonaws.com/prometheus/prom.tfstate http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.75.2"
+2025-10-30T22:23:45.472-0300 [DEBUG] backend-s3: HTTP Response Received: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket aws.s3.key=prometheus/prom.tfstate rpc.method=HeadObject rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.x_amz_id_2="pxe6HaXuBjDsk0S4Pf4BHzoqN6wgHZ1xiYFUdokIjy/Rv4psmI2L5ERZZfdACJyZ+mU/AnauM0c=" http.response.header.content_type=application/xml http.response.header.date="Fri, 31 Oct 2025 01:23:45 GMT" http.response.body="" http.duration=133 http.status_code=404 http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=SKKYK7RMXM7WKBB6
+2025-10-30T22:23:45.473-0300 [DEBUG] backend-s3: request failed with unretryable error https response error StatusCode: 404, RequestID: SKKYK7RMXM7WKBB6, HostID: pxe6HaXuBjDsk0S4Pf4BHzoqN6wgHZ1xiYFUdokIjy/Rv4psmI2L5ERZZfdACJyZ+mU/AnauM0c=, NotFound: : aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket aws.s3.key=prometheus/prom.tfstate rpc.method=HeadObject rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2
+2025-10-30T22:23:45.474-0300 [DEBUG] Module installer: begin prometheus-test-server
+2025-10-30T22:23:45.478-0300 [DEBUG] Service discovery for registry.opentofu.org at https://registry.opentofu.org/.well-known/terraform.json
+2025-10-30T22:23:45.868-0300 [DEBUG] GET https://registry.opentofu.org/v1/providers/hashicorp/aws/versions
+2025-10-30T22:23:58.850-0300 [INFO]  OpenTofu version: 1.10.6
+2025-10-30T22:23:58.850-0300 [DEBUG] using github.com/hashicorp/go-tfe v1.53.0
+2025-10-30T22:23:58.850-0300 [DEBUG] using github.com/opentofu/hcl/v2 v2.20.2-0.20250121132637-504036cd70e7
+2025-10-30T22:23:58.850-0300 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-30T22:23:58.850-0300 [DEBUG] using github.com/zclconf/go-cty v1.16.3
+2025-10-30T22:23:58.850-0300 [INFO]  Go runtime version: go1.25.0
+2025-10-30T22:23:58.850-0300 [INFO]  CLI args: []string{"tofu", "plan", "-out", "plan.out", "-var-file", "./environments/development/env.tfvars"}
+2025-10-30T22:23:58.850-0300 [DEBUG] Attempting to open CLI config file: /Users/razgriz1/.tofurc
+2025-10-30T22:23:58.850-0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-30T22:23:58.851-0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-30T22:23:58.851-0300 [DEBUG] ignoring non-existing provider search directory /Users/razgriz1/.terraform.d/plugins
+2025-10-30T22:23:58.851-0300 [DEBUG] ignoring non-existing provider search directory /Users/razgriz1/Library/Application Support/io.terraform/plugins
+2025-10-30T22:23:58.851-0300 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2025-10-30T22:23:58.851-0300 [DEBUG] Found the config directory: /Users/razgriz1/.terraform.d
+2025-10-30T22:23:58.851-0300 [INFO]  CLI command args: []string{"plan", "-out", "plan.out", "-var-file", "./environments/development/env.tfvars"}
+2025-10-30T22:23:58.854-0300 [DEBUG] backend-s3.aws-base: Resolving credentials provider
+2025-10-30T22:23:58.854-0300 [DEBUG] backend-s3.aws-base: Using profile: tf_aws.profile.source=envvar tf_aws.profile=gh-actions-user
+2025-10-30T22:23:58.854-0300 [DEBUG] backend-s3.aws-base: Loading configuration
+2025-10-30T22:23:58.854-0300 [DEBUG] backend-s3.aws-base: Retrieving credentials
+2025-10-30T22:23:58.854-0300 [DEBUG] backend-s3.aws-base: HTTP Request Sent: aws.region=us-east-1 rpc.method=AssumeRole rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" net.peer.name=sts.us-east-1.amazonaws.com http.request_content_length=175 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************XCPQ/20251031/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20251031T012358Z http.request.header.content_type=application/x-www-form-urlencoded http.request.header.amz_sdk_invocation_id=8842438e-656f-4d9d-a23a-7e1f8fd7d400
+  http.request.body=
+  | Action=AssumeRole&DurationSeconds=900&RoleArn=arn%3Aaws%3Aiam%3A%3A532907084571%3Arole%2Fgh-actions-user-role&RoleSessionName=aws-go-sdk-1761873838854572000&Version=2011-06-15
+   http.method=POST http.url=https://sts.us-east-1.amazonaws.com/ http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.33.12 m/E" http.request.header.amz_sdk_request="attempt=1; max=3"
+2025-10-30T22:23:59.359-0300 [DEBUG] backend-s3.aws-base: HTTP Response Received: aws.region=us-east-1 rpc.method=AssumeRole rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response_content_length=1515 http.response.header.date="Fri, 31 Oct 2025 01:23:59 GMT" http.response.header.x_amzn_requestid=511269b8-b2cb-448a-96e6-142f97bcb8cb http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzYxODczODM5NDEwOlI6WHdpSnJuMEM= http.response.header.content_type=text/xml
+  http.response.body=
+  | <AssumeRoleResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <AssumeRoleResult>
+  |     <AssumedRoleUser>
+  |       <AssumedRoleId>AROA*************CPBM:aws-go-sdk-1761873838854572000</AssumedRoleId>
+  |       <Arn>arn:aws:sts::532907084571:assumed-role/gh-actions-user-role/aws-go-sdk-1761873838854572000</Arn>
+  |     </AssumedRoleUser>
+  |     <Credentials>
+  |       <AccessKeyId>ASIA************WH7K</AccessKeyId>
+  |       <SecretAccessKey>p9k7********************************1cJ4</SecretAccessKey>
+  |       <SessionToken>IQoJb3JpZ2luX2VjEEIaCXVzLWVhc3QtMSJIMEYCIQCqpcalVY5PmTWdu23uVKBDI6uXfmSS1uuHnnf79sGx+AIhAORT/GHHnYbpCwGNS5Ua9p2+gkRXy4345S7m/sDwKvmfKrQCCPv//////////wEQARoMNTMyOTA3MDg0NTcxIgzB3cvS2FFKJZkSjYYqiAJxiAhzY2zJxqvSFsee0HL1JPMB8I4mLaAe6oBI7iKs6yuOrO+aM637BwDosM8Y3x1itlZg0EsuI0vGzC/9K7oiI29R+dNvuV1RSHfbwGNeb3Q1U0c/wKeuK6aBYLTaQwhAmwl239Nd5MDNHCyD3g2KezEDG71eUYT1gKu6htwHWRznhCzCA8JSlHXNCuOFZ5bDYoY2Y+81wV+5bARWU7Y4OYaQ+h71zsFceEC0aXnD7V+pwjmn2smeJ4kJhqRCRE/3T+B1TOKu7jPJ+5knslsj8rgoXmDs/lIK5MtAm6Ao7gbpNtf2GSEL5Ib/WxBa0Jw2Hyb4AA4CzkLZj+XcMNbVuiez7F7AdiIwr5+QyAY6nAGklPwxG55JF/6xDJVI6fPB7SrJ4w0MZgNjan5mDhfCBiobdLwIN17sPWb+MFUQDjQlzWI1DJ8FQRUAQAZ4gif7hb99L63FE/om5YqTEea36Yw0Y6edcGfPAfEdc0F8bgMnDloY9xgHHMVjtZy+HXfAqn5A/c42aBFw2N58BB8NaZk2l7PQA9z9/gR/hX3qhf9hLwmKneabI9c3XcA=</SessionToken>
+  |       <Expiration>2025-10-31T01:38:59Z</Expiration>
+  |     </Credentials>
+  |   </AssumeRoleResult>
+  |   <ResponseMetadata>
+  |     <RequestId>511269b8-b2cb-448a-96e6-142f97bcb8cb</RequestId>
+  |   </ResponseMetadata>
+  | </AssumeRoleResponse>
+   http.duration=504 http.status_code=200
+2025-10-30T22:23:59.360-0300 [INFO]  backend-s3.aws-base: Retrieved credentials: tf_aws.credentials_source=AssumeRoleProvider
+2025-10-30T22:23:59.360-0300 [DEBUG] backend-s3.aws-base: Loading configuration
+2025-10-30T22:23:59.360-0300 [DEBUG] backend-s3.aws-base: Retrieving caller identity from STS
+2025-10-30T22:23:59.361-0300 [DEBUG] backend-s3.aws-base: HTTP Request Sent: aws.region=us-east-1 rpc.method=GetCallerIdentity rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region=""
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.url=https://sts.us-east-1.amazonaws.com/ http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.33.12" http.request_content_length=43 http.request.header.amz_sdk_request="attempt=1; max=5" http.request.header.amz_sdk_invocation_id=2edcbf82-623c-4aa2-86e7-dec2761552d4 http.method=POST net.peer.name=sts.us-east-1.amazonaws.com http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************WH7K/20251031/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=*****" http.request.header.x_amz_security_token="*****" http.request.header.x_amz_date=20251031T012359Z http.request.header.content_type=application/x-www-form-urlencoded
+2025-10-30T22:23:59.843-0300 [DEBUG] backend-s3.aws-base: HTTP Response Received: aws.region=us-east-1 rpc.method=GetCallerIdentity rpc.service=STS rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.date="Fri, 31 Oct 2025 01:23:59 GMT" http.response.header.x_amzn_requestid=dd212f1d-c4fd-42cc-bb17-d9e2947ded21
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:sts::532907084571:assumed-role/gh-actions-user-role/aws-go-sdk-1761873838854572000</Arn>
+  |     <UserId>AROA*************CPBM:aws-go-sdk-1761873838854572000</UserId>
+  |     <Account>532907084571</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>dd212f1d-c4fd-42cc-bb17-d9e2947ded21</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.duration=481 http.status_code=200 http.response_content_length=487 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzYxODczODM5OTEyOlI6MG9md1BQd0M= http.response.header.content_type=text/xml
+2025-10-30T22:23:59.843-0300 [INFO]  backend-s3.aws-base: Retrieved caller identity from STS
+2025-10-30T22:24:00.165-0300 [DEBUG] checking for provisioner in "."
+2025-10-30T22:24:00.165-0300 [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2025-10-30T22:24:00.165-0300 [INFO]  backend/local: starting Plan operation
+2025-10-30T22:24:00.166-0300 [DEBUG] backend-s3: HTTP Request Sent: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket rpc.method=ListObjectsV2 rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.method=GET net.peer.name=devops-tf-states-bucket.s3.us-east-1.amazonaws.com http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.75.2 m/C" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************WH7K/20251031/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date;x-amz-security-token, Signature=*****" http.request.header.x_amz_security_token="*****" http.request.header.accept_encoding=identity http.request.header.amz_sdk_request="attempt=1; max=5" http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.url="https://devops-tf-states-bucket.s3.us-east-1.amazonaws.com/?list-type=2&max-keys=1000&prefix=env%3A%2F" http.request.header.amz_sdk_invocation_id=9aef3fa6-98f6-44af-b2b7-558724143ec1 http.request.header.x_amz_date=20251031T012400Z http.request.body=""
+2025-10-30T22:24:00.591-0300 [DEBUG] backend-s3: HTTP Response Received: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket rpc.method=ListObjectsV2 rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.x_amz_request_id=XHYZ7W66G8T1RNNA http.response.header.date="Fri, 31 Oct 2025 01:24:01 GMT" http.response.header.x_amz_bucket_region=us-east-1 http.response.header.content_type=application/xml http.response.header.x_amz_id_2="BDBCrOI50i+xAl1QwWqvqa6o4OXOyMNb/q6ZOiYFDG/JKy8/xoL/6ZvTd71a3cg572BDTQ3Kzx0=" http.duration=424 http.status_code=200 http.response.header.server=AmazonS3
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>devops-tf-states-bucket</Name><Prefix>env:/</Prefix><KeyCount>0</KeyCount><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+  
+2025-10-30T22:24:00.592-0300 [DEBUG] backend-s3: HTTP Request Sent: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket aws.s3.key=prometheus/prom.tfstate rpc.method=HeadObject rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.accept_encoding=identity http.request.header.x_amz_content_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 http.request.header.x_amz_date=20251031T012400Z http.url=https://devops-tf-states-bucket.s3.us-east-1.amazonaws.com/prometheus/prom.tfstate http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************WH7K/20251031/us-east-1/s3/aws4_request, SignedHeaders=accept-encoding;amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date;x-amz-security-token, Signature=*****" http.request.header.x_amz_security_token="*****" http.request.header.amz_sdk_request="attempt=1; max=5" http.request.body="" http.method=HEAD net.peer.name=devops-tf-states-bucket.s3.us-east-1.amazonaws.com http.user_agent="APN/1.0 OpenTofu-S3-Backend/1.0 OpenTofu/1.10.6 aws-sdk-go-v2/1.36.0 ua/2.1 os/macos lang/go#1.25.0 md/GOOS#darwin md/GOARCH#arm64 api/s3#1.75.2" http.request.header.amz_sdk_invocation_id=9528451d-d986-4d09-89cc-bb394bcbe6d7
+2025-10-30T22:24:00.724-0300 [DEBUG] backend-s3: HTTP Response Received: aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket aws.s3.key=prometheus/prom.tfstate rpc.method=HeadObject rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.body="" http.duration=131 http.status_code=404 http.response.header.server=AmazonS3 http.response.header.x_amz_request_id=XHYJZBNEHSJZMNWX http.response.header.x_amz_id_2="++7Wj4s48KroSYK+oCtOz2UrMxdmtHE0HR1bmC/p8stFxL2SjuSbElBMqM1v7475pMIM+2PnVhI=" http.response.header.content_type=application/xml http.response.header.date="Fri, 31 Oct 2025 01:23:59 GMT"
+2025-10-30T22:24:00.724-0300 [DEBUG] backend-s3: request failed with unretryable error https response error StatusCode: 404, RequestID: XHYJZBNEHSJZMNWX, HostID: ++7Wj4s48KroSYK+oCtOz2UrMxdmtHE0HR1bmC/p8stFxL2SjuSbElBMqM1v7475pMIM+2PnVhI=, NotFound: : aws.region=us-east-1 aws.s3.bucket=devops-tf-states-bucket aws.s3.key=prometheus/prom.tfstate rpc.method=HeadObject rpc.service=S3 rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2
+2025-10-30T22:24:00.727-0300 [DEBUG] created provider logger: level=debug
+2025-10-30T22:24:00.727-0300 [INFO]  provider: configuring client automatic mTLS
+2025-10-30T22:24:00.740-0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws args=[".terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws"]
+2025-10-30T22:24:00.753-0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws pid=24526
+2025-10-30T22:24:00.753-0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws
+2025-10-30T22:24:00.840-0300 [DEBUG] provider.terraform-provider-aws: Starting github.com/hashicorp/terraform-provider-aws@dev (go1.24.8)...
+2025-10-30T22:24:00.840-0300 [DEBUG] provider.terraform-provider-aws: Creating Terraform AWS Provider (SDKv2-style)...
+2025-10-30T22:24:00.851-0300 [DEBUG] provider.terraform-provider-aws: Initializing Terraform AWS Provider (SDKv2-style)...
+2025-10-30T22:24:00.859-0300 [DEBUG] provider.terraform-provider-aws: Creating Terraform AWS Provider (Framework-style)...
+2025-10-30T22:24:00.866-0300 [DEBUG] provider.terraform-provider-aws: Initializing Terraform AWS Provider (Framework-style)...
+2025-10-30T22:24:00.867-0300 [INFO]  provider.terraform-provider-aws: configuring server automatic mTLS: timestamp=2025-10-30T22:24:00.867-0300
+2025-10-30T22:24:00.871-0300 [DEBUG] provider.terraform-provider-aws: plugin address: address=/var/folders/kn/d5330xhn4_n320_mr76kksjh0000gn/T/plugin930598010 network=unix timestamp=2025-10-30T22:24:00.871-0300
+2025-10-30T22:24:00.871-0300 [DEBUG] provider: using plugin: version=5
+2025-10-30T22:24:01.267-0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-10-30T22:24:01.270-0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws pid=24526
+2025-10-30T22:24:01.270-0300 [DEBUG] provider: plugin exited
+2025-10-30T22:24:01.270-0300 [DEBUG] Building and walking validate graph
+2025-10-30T22:24:01.270-0300 [DEBUG] adding implicit provider configuration provider["registry.opentofu.org/hashicorp/aws"], implied first by module.prometheus-test-server.aws_instance.test-server
+2025-10-30T22:24:01.270-0300 [DEBUG] ProviderTransformer: "module.prometheus-test-server.aws_instance.test-server" (*tofu.NodeValidatableResource) needs provider["registry.opentofu.org/hashicorp/aws"]
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_instance_type (expand, input)" references: [var.test_server_instance_type var.test_server_instance_type (expand, reference)]
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.remote_state_bucket_name" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.remote_state_bucket_name (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.remote_state_filepath (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.region" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.test_server_tags" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "provider[\"registry.opentofu.org/hashicorp/aws\"]" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.test_server_ami" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.region (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.test_server_instance_type" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.test_server_instance_type (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_ami (expand, input)" references: [var.test_server_ami var.test_server_ami (expand, reference)]
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_ami (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_instance_type (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_tags (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.test_server_tags (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.aws_instance.test-server" references: [module.prometheus-test-server.var.test_server_instance_type (expand, input) module.prometheus-test-server.var.test_server_instance_type (expand, reference) module.prometheus-test-server.var.test_server_tags (expand, reference) module.prometheus-test-server.var.test_server_tags (expand, input) module.prometheus-test-server.var.test_server_ami (expand, input) module.prometheus-test-server.var.test_server_ami (expand, reference)]
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.test_server_ami (expand, reference)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "var.remote_state_filepath" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_tags (expand, input)" references: [var.test_server_tags var.test_server_tags (expand, reference)]
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server (expand)" references: []
+2025-10-30T22:24:01.270-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server (close)" references: []
+2025-10-30T22:24:01.271-0300 [DEBUG] Starting graph walk: walkValidate
+2025-10-30T22:24:01.271-0300 [DEBUG] created provider logger: level=debug
+2025-10-30T22:24:01.271-0300 [INFO]  provider: configuring client automatic mTLS
+2025-10-30T22:24:01.272-0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws args=[".terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws"]
+2025-10-30T22:24:01.277-0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws pid=24527
+2025-10-30T22:24:01.277-0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws
+2025-10-30T22:24:01.347-0300 [DEBUG] provider.terraform-provider-aws: Starting github.com/hashicorp/terraform-provider-aws@dev (go1.24.8)...
+2025-10-30T22:24:01.347-0300 [DEBUG] provider.terraform-provider-aws: Creating Terraform AWS Provider (SDKv2-style)...
+2025-10-30T22:24:01.358-0300 [DEBUG] provider.terraform-provider-aws: Initializing Terraform AWS Provider (SDKv2-style)...
+2025-10-30T22:24:01.366-0300 [DEBUG] provider.terraform-provider-aws: Creating Terraform AWS Provider (Framework-style)...
+2025-10-30T22:24:01.374-0300 [DEBUG] provider.terraform-provider-aws: Initializing Terraform AWS Provider (Framework-style)...
+2025-10-30T22:24:01.374-0300 [INFO]  provider.terraform-provider-aws: configuring server automatic mTLS: timestamp=2025-10-30T22:24:01.374-0300
+2025-10-30T22:24:01.378-0300 [DEBUG] provider: using plugin: version=5
+2025-10-30T22:24:01.378-0300 [DEBUG] provider.terraform-provider-aws: plugin address: address=/var/folders/kn/d5330xhn4_n320_mr76kksjh0000gn/T/plugin393397149 network=unix timestamp=2025-10-30T22:24:01.378-0300
+2025-10-30T22:24:01.384-0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-10-30T22:24:01.386-0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws pid=24527
+2025-10-30T22:24:01.386-0300 [DEBUG] provider: plugin exited
+2025-10-30T22:24:01.386-0300 [INFO]  backend/local: plan calling Plan
+2025-10-30T22:24:01.386-0300 [DEBUG] Building and walking plan graph for NormalMode
+2025-10-30T22:24:01.386-0300 [DEBUG] adding implicit provider configuration provider["registry.opentofu.org/hashicorp/aws"], implied first by module.prometheus-test-server.aws_instance.test-server (expand)
+2025-10-30T22:24:01.386-0300 [DEBUG] ProviderTransformer: "module.prometheus-test-server.aws_instance.test-server (expand)" (*tofu.nodeExpandPlannableResource) needs provider["registry.opentofu.org/hashicorp/aws"]
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.test_server_ami" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.remote_state_filepath" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.remote_state_filepath (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.test_server_instance_type (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_ami (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.remote_state_bucket_name (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.test_server_tags (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_instance_type (expand, input)" references: [var.test_server_instance_type (expand, reference) var.test_server_instance_type]
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_instance_type (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_ami (expand, input)" references: [var.test_server_ami var.test_server_ami (expand, reference)]
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.aws_instance.test-server (expand)" references: [module.prometheus-test-server.var.test_server_ami (expand, reference) module.prometheus-test-server.var.test_server_ami (expand, input) module.prometheus-test-server.var.test_server_instance_type (expand, input) module.prometheus-test-server.var.test_server_instance_type (expand, reference) module.prometheus-test-server.var.test_server_tags (expand, reference) module.prometheus-test-server.var.test_server_tags (expand, input)]
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.remote_state_bucket_name" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.region" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.region (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_tags (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "provider[\"registry.opentofu.org/hashicorp/aws\"]" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server (expand)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.test_server_ami (expand, reference)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.test_server_instance_type" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "var.test_server_tags" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_tags (expand, input)" references: [var.test_server_tags (expand, reference) var.test_server_tags]
+2025-10-30T22:24:01.387-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server (close)" references: []
+2025-10-30T22:24:01.387-0300 [DEBUG] Starting graph walk: walkPlan
+2025-10-30T22:24:01.387-0300 [DEBUG] created provider logger: level=debug
+2025-10-30T22:24:01.387-0300 [INFO]  provider: configuring client automatic mTLS
+2025-10-30T22:24:01.389-0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws args=[".terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws"]
+2025-10-30T22:24:01.393-0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws pid=24528
+2025-10-30T22:24:01.393-0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws
+2025-10-30T22:24:01.465-0300 [DEBUG] provider.terraform-provider-aws: Starting github.com/hashicorp/terraform-provider-aws@dev (go1.24.8)...
+2025-10-30T22:24:01.465-0300 [DEBUG] provider.terraform-provider-aws: Creating Terraform AWS Provider (SDKv2-style)...
+2025-10-30T22:24:01.476-0300 [DEBUG] provider.terraform-provider-aws: Initializing Terraform AWS Provider (SDKv2-style)...
+2025-10-30T22:24:01.484-0300 [DEBUG] provider.terraform-provider-aws: Creating Terraform AWS Provider (Framework-style)...
+2025-10-30T22:24:01.490-0300 [DEBUG] provider.terraform-provider-aws: Initializing Terraform AWS Provider (Framework-style)...
+2025-10-30T22:24:01.490-0300 [INFO]  provider.terraform-provider-aws: configuring server automatic mTLS: timestamp=2025-10-30T22:24:01.490-0300
+2025-10-30T22:24:01.496-0300 [DEBUG] provider.terraform-provider-aws: plugin address: address=/var/folders/kn/d5330xhn4_n320_mr76kksjh0000gn/T/plugin932828810 network=unix timestamp=2025-10-30T22:24:01.496-0300
+2025-10-30T22:24:01.496-0300 [DEBUG] provider: using plugin: version=5
+2025-10-30T22:24:01.539-0300 [DEBUG] provider.terraform-provider-aws: Configuring Terraform AWS Provider: @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=/home/runner/work/terraform-provider-aws/terraform-provider-aws/provider/internal/conns/config.go:143 tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a timestamp=2025-10-30T22:24:01.539-0300
+2025-10-30T22:24:01.539-0300 [DEBUG] provider.terraform-provider-aws: Resolving credentials provider: tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a tf_rpc=ConfigureProvider @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2025-10-30T22:24:01.539-0300
+2025-10-30T22:24:01.539-0300 [DEBUG] provider.terraform-provider-aws: Using profile: tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a tf_aws.profile=gh-actions-user tf_aws.profile.source=envvar tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2025-10-30T22:24:01.539-0300
+2025-10-30T22:24:01.539-0300 [DEBUG] provider.terraform-provider-aws: Loading configuration: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a tf_rpc=ConfigureProvider @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2025-10-30T22:24:01.539-0300
+2025-10-30T22:24:01.539-0300 [DEBUG] provider.terraform-provider-aws: Retrieving credentials: tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 timestamp=2025-10-30T22:24:01.539-0300
+2025-10-30T22:24:01.540-0300 [DEBUG] provider.terraform-provider-aws: HTTP Request Sent: aws.region=us-east-1 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.10.6 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.39.3 ua/2.1 os/macos lang/go#1.24.8 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.38.7 m/E,n,o" rpc.method=AssumeRole tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************XCPQ/20251031/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" rpc.service=STS rpc.system=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base
+  http.request.body=
+  | Action=AssumeRole&DurationSeconds=900&RoleArn=arn%3Aaws%3Aiam%3A%3A532907084571%3Arole%2Fgh-actions-user-role&RoleSessionName=aws-go-sdk-1761873841539750000&Version=2011-06-15
+   http.request.header.amz_sdk_invocation_id=feeeca5c-a89a-4a62-b789-6540ed336e7c http.request.header.content_type=application/x-www-form-urlencoded http.request_content_length=175 net.peer.name=sts.us-east-1.amazonaws.com tf_aws.signing_region="" @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 http.method=POST http.request.header.amz_sdk_request="attempt=1; max=3" http.request.header.x_amz_date=20251031T012401Z http.url=https://sts.us-east-1.amazonaws.com/ tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" timestamp=2025-10-30T22:24:01.540-0300
+2025-10-30T22:24:02.026-0300 [DEBUG] provider.terraform-provider-aws: HTTP Response Received: @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 @module=aws.aws-base aws.region=us-east-1 http.response.header.content_type=text/xml rpc.system=aws-api tf_aws.sdk=aws-sdk-go-v2 http.duration=485 http.response.header.date="Fri, 31 Oct 2025 01:24:02 GMT" http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzYxODczODQyMDg0OlI6cFFWUEp0WVA= http.response.header.x_amzn_requestid=5221e21c-a6b3-4d52-84f0-c8b462454bf1 http.response_content_length=1515 http.status_code=200 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a rpc.method=AssumeRole tf_aws.signing_region="" tf_rpc=ConfigureProvider
+  http.response.body=
+  | <AssumeRoleResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <AssumeRoleResult>
+  |     <AssumedRoleUser>
+  |       <AssumedRoleId>AROA*************CPBM:aws-go-sdk-1761873841539750000</AssumedRoleId>
+  |       <Arn>arn:aws:sts::532907084571:assumed-role/gh-actions-user-role/aws-go-sdk-1761873841539750000</Arn>
+  |     </AssumedRoleUser>
+  |     <Credentials>
+  |       <AccessKeyId>ASIA************GGT5</AccessKeyId>
+  |       <SecretAccessKey>qzSu********************************/wXv</SecretAccessKey>
+  |       <SessionToken>IQoJb3JpZ2luX2VjEEIaCXVzLWVhc3QtMSJHMEUCIQCHArgmUWtDjaRdB/T7QL6sq3fpKfsXKHJA/syP41jL+gIgBIZWXDRKEPksFEV7YGBA28JxAZ6ddFNrEgAnHqvmtmsqtAII+///////////ARABGgw1MzI5MDcwODQ1NzEiDGn5C+YBhLdWVAthZiqIAnYr0ILqPRZg46ftpk9kmm2+Q6L/b6Kn84SzejhSB14K4n+jr+YalwtT/YA0skcFTcn3UxKSAtDphRVV71b2Abk+Zfdlw09p3pXfBPf9taL5Qnh4QvrVlJol9+I2jzC+ia955u93ye+GtvRwYuAC5VX50VnKCw/ZxyEYtzIKFUC46yTKW9uZT2b4FKdcB9UIf/pRnF0D0W7MQGlnHVYU/HNhgQNQkETz3kw9bS6YSms9BHEjY/eDWBe9lqzqIjlZZiw0IDzJ3/cuyLOolJ+BNOFAJjWmFBznwbXHN/3ijsDk9eJi/bHKUZ6IiU7GVkWHAtjq1vV9+seZVBNOzvoy8z+d0sk1hGGYwDCyn5DIBjqdAe+I0VxLj/Hq7Ns/CKTyQ4PpXVCJP1SF/LDSFtcofDtmFfXPdoBDwlPI5ie1Og+jifLavImwVGRgXMoRfXy8srK/+HA/Uxe0MZHfhcOvBIg2XmaD9WI2fkK9S8b3dEyP6Bpx3EagQx+QWEEGBwbI3XGhgfqccmC0HlAYnyubXP0yhlaXoeFmp+DT0xvg4jOl1qFyF9SKLzUW2EuQk8E=</SessionToken>
+  |       <Expiration>2025-10-31T01:39:02Z</Expiration>
+  |     </Credentials>
+  |   </AssumeRoleResult>
+  |   <ResponseMetadata>
+  |     <RequestId>5221e21c-a6b3-4d52-84f0-c8b462454bf1</RequestId>
+  |   </ResponseMetadata>
+  | </AssumeRoleResponse>
+   rpc.service=STS tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp=2025-10-30T22:24:02.025-0300
+2025-10-30T22:24:02.026-0300 [INFO]  provider.terraform-provider-aws: Retrieved credentials: @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:39 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base tf_aws.credentials_source=AssumeRoleProvider tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a timestamp=2025-10-30T22:24:02.026-0300
+2025-10-30T22:24:02.026-0300 [DEBUG] provider.terraform-provider-aws: Loading configuration: @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a timestamp=2025-10-30T22:24:02.026-0300
+2025-10-30T22:24:02.026-0300 [DEBUG] provider.terraform-provider-aws: Retrieving AWS account details: @module=aws tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a @caller=/home/runner/work/terraform-provider-aws/terraform-provider-aws/provider/internal/conns/config.go:167 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp=2025-10-30T22:24:02.026-0300
+2025-10-30T22:24:02.026-0300 [DEBUG] provider.terraform-provider-aws: Retrieving caller identity from STS: @module=aws.aws-base tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 timestamp=2025-10-30T22:24:02.026-0300
+2025-10-30T22:24:02.027-0300 [DEBUG] provider.terraform-provider-aws: HTTP Request Sent: tf_mux_provider="*schema.GRPCProviderServer" aws.region=us-east-1 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_security_token="*****" http.request_content_length=43 http.url=https://sts.us-east-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.10.6 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.39.3 ua/2.1 os/macos lang/go#1.24.8 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.38.7 m/i,n,o" tf_aws.sdk=aws-sdk-go-v2 @module=aws.aws-base http.method=POST
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.amz_sdk_invocation_id=424ea29b-9636-4892-939b-7280a3595966 rpc.method=GetCallerIdentity tf_aws.signing_region="" tf_rpc=ConfigureProvider @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=ASIA************GGT5/20251031/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=*****" rpc.service=STS rpc.system=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a http.request.header.x_amz_date=20251031T012402Z net.peer.name=sts.us-east-1.amazonaws.com timestamp=2025-10-30T22:24:02.027-0300
+2025-10-30T22:24:02.535-0300 [DEBUG] provider.terraform-provider-aws: HTTP Response Received: http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzYxODczODQyNjA1OlI6VTR0MmFIelI= http.response.header.x_amzn_requestid=301d3f93-947b-4991-b565-0b2f00ab84f6 rpc.service=STS tf_aws.sdk=aws-sdk-go-v2 @module=aws.aws-base aws.region=us-east-1
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:sts::532907084571:assumed-role/gh-actions-user-role/aws-go-sdk-1761873841539750000</Arn>
+  |     <UserId>AROA*************CPBM:aws-go-sdk-1761873841539750000</UserId>
+  |     <Account>532907084571</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>301d3f93-947b-4991-b565-0b2f00ab84f6</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.status_code=200 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.content_type=text/xml http.response.header.date="Fri, 31 Oct 2025 01:24:02 GMT" rpc.method=GetCallerIdentity rpc.system=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a tf_rpc=ConfigureProvider @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:47 http.duration=507 http.response_content_length=487 timestamp=2025-10-30T22:24:02.535-0300
+2025-10-30T22:24:02.535-0300 [INFO]  provider.terraform-provider-aws: Retrieved caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=af6a834a-f673-54db-b139-378159d8cc9a tf_rpc=ConfigureProvider @caller=/home/runner/go/pkg/mod/github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.67/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" timestamp=2025-10-30T22:24:02.535-0300
+2025-10-30T22:24:02.537-0300 [DEBUG] Resource instance state not found for node "module.prometheus-test-server.aws_instance.test-server", instance module.prometheus-test-server.aws_instance.test-server
+2025-10-30T22:24:02.538-0300 [INFO]  ReferenceTransformer: reference not found: "var.test_server_instance_type"
+2025-10-30T22:24:02.538-0300 [INFO]  ReferenceTransformer: reference not found: "var.test_server_tags"
+2025-10-30T22:24:02.538-0300 [INFO]  ReferenceTransformer: reference not found: "var.test_server_ami"
+2025-10-30T22:24:02.538-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.aws_instance.test-server" references: []
+2025-10-30T22:24:02.538-0300 [DEBUG] refresh: module.prometheus-test-server.aws_instance.test-server: no state, so not refreshing
+2025-10-30T22:24:02.557-0300 [WARN]  Provider "provider[\"registry.opentofu.org/hashicorp/aws\"]" produced an invalid plan for module.prometheus-test-server.aws_instance.test-server, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .private_dns_name_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cpu_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .primary_network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .capacity_reservation_specification: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .instance_market_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .maintenance_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-10-30T22:24:02.558-0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2025-10-30T22:24:02.564-0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.opentofu.org/hashicorp/aws/6.18.0/darwin_arm64/terraform-provider-aws pid=24528
+2025-10-30T22:24:02.564-0300 [DEBUG] provider: plugin exited
+2025-10-30T22:24:02.564-0300 [DEBUG] building apply graph to check for errors
+2025-10-30T22:24:02.564-0300 [DEBUG] Resource state not found for node "module.prometheus-test-server.aws_instance.test-server", instance module.prometheus-test-server.aws_instance.test-server
+2025-10-30T22:24:02.565-0300 [DEBUG] adding implicit provider configuration provider["registry.opentofu.org/hashicorp/aws"], implied first by module.prometheus-test-server.aws_instance.test-server
+2025-10-30T22:24:02.565-0300 [DEBUG] ProviderTransformer: "module.prometheus-test-server.aws_instance.test-server (expand)" (*tofu.nodeExpandApplyableResource) needs provider["registry.opentofu.org/hashicorp/aws"]
+2025-10-30T22:24:02.565-0300 [DEBUG] ProviderTransformer: "module.prometheus-test-server.aws_instance.test-server" (*tofu.NodeApplyableResourceInstance) needs provider["registry.opentofu.org/hashicorp/aws"]
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_tags (expand, input)" references: [var.test_server_tags var.test_server_tags (expand, reference)]
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_tags (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "provider[\"registry.opentofu.org/hashicorp/aws\"]" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.region" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.test_server_instance_type" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.test_server_instance_type (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_instance_type (expand, input)" references: [var.test_server_instance_type var.test_server_instance_type (expand, reference)]
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server (close)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.aws_instance.test-server (expand)" references: [module.prometheus-test-server.var.test_server_instance_type (expand, input) module.prometheus-test-server.var.test_server_instance_type (expand, reference) module.prometheus-test-server.var.test_server_tags (expand, input) module.prometheus-test-server.var.test_server_tags (expand, reference) module.prometheus-test-server.var.test_server_ami (expand, reference) module.prometheus-test-server.var.test_server_ami (expand, input)]
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.test_server_tags" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.test_server_tags (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.test_server_ami (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.remote_state_filepath (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.region (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_ami (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_instance_type (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.var.test_server_ami (expand, input)" references: [var.test_server_ami (expand, reference) var.test_server_ami]
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server.aws_instance.test-server" references: [module.prometheus-test-server.var.test_server_ami (expand, reference) module.prometheus-test-server.var.test_server_ami (expand, input) module.prometheus-test-server.var.test_server_instance_type (expand, input) module.prometheus-test-server.var.test_server_instance_type (expand, reference) module.prometheus-test-server.var.test_server_tags (expand, input) module.prometheus-test-server.var.test_server_tags (expand, reference)]
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "module.prometheus-test-server (expand)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.test_server_ami" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.remote_state_bucket_name" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.remote_state_bucket_name (expand, reference)" references: []
+2025-10-30T22:24:02.565-0300 [DEBUG] ReferenceTransformer: "var.remote_state_filepath" references: []
+2025-10-30T22:24:02.566-0300 [DEBUG] pruneUnusedNodes: var.remote_state_filepath (expand, reference) is no longer needed, removing
+2025-10-30T22:24:02.566-0300 [DEBUG] pruneUnusedNodes: var.region (expand, reference) is no longer needed, removing
+2025-10-30T22:24:02.566-0300 [DEBUG] pruneUnusedNodes: var.remote_state_bucket_name (expand, reference) is no longer needed, removing
+2025-10-30T22:24:02.566-0300 [INFO]  backend/local: plan operation completed
+2025-10-30T22:24:02.566-0300 [INFO]  backend/local: writing plan output to: plan.out
