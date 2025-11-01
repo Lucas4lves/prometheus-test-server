@@ -3,4 +3,5 @@ module "prometheus-test-server" {
   test_server_instance_type = var.test_server_instance_type
   test_server_tags          = var.test_server_tags
   test_server_ami           = var.test_server_ami
+  aws_region                    = var.region
 }
