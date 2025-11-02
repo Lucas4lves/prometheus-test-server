@@ -40,3 +40,5 @@ jobs:
           TF_LOG: DEBUG
           TF_LOG_PATH: tofu.log
         run: tofu plan -out plan.out 
+      - name: Apply 
+        run: tofu apply ./plan.out
