@@ -16,20 +16,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup OpenTofu
-        uses: opentofu/setup-opentofu@v1
-      - name: Initialize OpenTofu
-        run: tofu init
-      - name: Validate
-        run: tofu validate
       - name: Configure AWS credentials from IAM Role
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::532907084571:role/gh-actions-user-role
           aws-region: us-east-1
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
+      - name: Grant permission to run gen-backend.sh
+        run: chmod +x ./gen-backend.sh
+      - name: Write backend definition
+        run: ./gen-backend.sh ${{ secrets.TF_VAR_REMOTE_STATE_BUCKET_NAME }} ${{ secrets.TF_VAR_REMOTE_STATE_FILEPATH }} "us-east-1"
+      - name: Initialize OpenTofu
+        run: tofu init
+      - name: Validate
+        run: tofu validate
+      - name: Debug sts caller
+        run: aws sts get-caller-identity
       - name: Plan
         env:
           TF_VAR_test_server_ami: ${{ secrets.TF_VAR_test_server_ami }}
-          TF_VAR_test_server_availability_zone: ${{ secrets.TF_VAR_test_server_availability_zone }}
           TF_VAR_test_server_instance_type: ${{ secrets.TF_VAR_test_server_instance_type }}
+          TF_LOG: DEBUG
+          TF_LOG_PATH: tofu.log
         run: tofu plan -out plan.out 

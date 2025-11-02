@@ -3,6 +3,16 @@ variable "test_server_ami" {
   default = ""
 }
 
+variable "remote_state_bucket_name" {
+  type = string
+  default = ""
+}
+
+variable "remote_state_filepath" {
+  type = string
+  default = ""
+}
+
 variable "region" {
   type    = string
   default = "us-east-1"
