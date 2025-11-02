@@ -5,10 +5,12 @@ variable "test_server_ami" {
 
 variable "remote_state_bucket_name" {
   type = string
+  default = ""
 }
 
 variable "remote_state_filepath" {
   type = string
+  default = ""
 }
 
 variable "region" {
